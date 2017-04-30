@@ -53,6 +53,15 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+annon@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/annon/-/annon-0.3.0.tgz#019c90d295cbf8e802fa8f790b7c31f3bab69944"
+  dependencies:
+    babel-runtime "^6.23.0"
+    falzy "^0.19.0"
+    fnamed "^0.5.0"
+    protype "^0.21.0"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -157,6 +166,17 @@ async@^2.1.2:
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+
+asyum@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/asyum/-/asyum-0.0.0.tgz#d72fd4a694d419648be662fc594d72ce2bb66511"
+  dependencies:
+    annon "^0.3.0"
+    babel-runtime "^6.23.0"
+    doubt "^0.26.0"
+    fname "^0.4.0"
+    protype "^0.21.0"
+    wichevr "^0.8.0"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
@@ -1199,6 +1219,16 @@ fname@^0.2.0:
     protype "^0.21.0"
     truly "^0.18.0"
 
+fname@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/fname/-/fname-0.4.0.tgz#d325613919d0d3c7594b85888cc0143e89e71b47"
+  dependencies:
+    babel-runtime "^6.23.0"
+    falzy "^0.19.0"
+    mtch "^0.0.0"
+    protype "^0.21.0"
+    truly "^0.18.0"
+
 fnamed@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/fnamed/-/fnamed-0.4.0.tgz#347c4a56a9fdd9b2c04838f431df92af1b96f9e8"
@@ -1206,6 +1236,16 @@ fnamed@^0.4.0:
     babel-runtime "^6.23.0"
     falzy "^0.19.0"
     fname "^0.2.0"
+    protype "^0.21.0"
+    truly "^0.18.0"
+
+fnamed@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/fnamed/-/fnamed-0.5.0.tgz#0affef49a8aefffa7b0945313e186ff8e3af1332"
+  dependencies:
+    babel-runtime "^6.23.0"
+    falzy "^0.19.0"
+    fname "^0.4.0"
     protype "^0.21.0"
     truly "^0.18.0"
 

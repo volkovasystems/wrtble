@@ -45,12 +45,14 @@
 
 	@include:
 		{
+			"asyum": "asyum",
 			"dscrb": "dscrb",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
+const asyum = require( "asyum" );
 const dscrb = require( "dscrb" );
 const zelf = require( "zelf" );
 
@@ -72,8 +74,10 @@ const wrtble = function wrtble( property, entity ){
 		entity = zelf( this );
 	}
 
+	let descriptor = asyum( { }, function flush( ){ } );
+
 	try{
-		var descriptor = dscrb( property, entity );
+		descriptor = dscrb( property, entity );
 
 		return descriptor.writable( );
 

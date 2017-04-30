@@ -1,6 +1,6 @@
 {
   "name": "wrtble",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Checks if property is writable.",
   "main": "wrtble.js",
   "support": "wrtble.support.js",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/volkovasystems/wrtble#readme",
   "dependencies": {
+    "asyum": "^0.0.0",
     "babel-runtime": "^6.23.0",
     "dscrb": "^0.1.0",
     "zelf": "^0.11.0"
