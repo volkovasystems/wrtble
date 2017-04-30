@@ -1,0 +1,35 @@
+{
+  "name": "wrtble",
+  "version": "0.0.0",
+  "description": "Checks if property is writable.",
+  "main": "wrtble.deploy.js",
+  "support": "wrtble.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "property",
+    "writable",
+    "wrtble"
+  ],
+  "homepage": "https://github.com/volkovasystems/wrtble",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "kein": "^0.22.0",
+    "doubt": "^0.26.0",
+    "raze": "^0.29.0",
+    "stringe": "^0.3.0"
+  },
+  "dependencies": {
+    "dscrb": "^0.1.0",
+    "zelf": "^0.11.0"
+  }
+}
