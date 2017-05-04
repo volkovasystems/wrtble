@@ -1,6 +1,6 @@
 {
   "name": "wrtble",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Checks if property is writable.",
   "main": "wrtble.js",
   "support": "wrtble.support.js",
@@ -21,15 +21,18 @@
     "wrtble"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/wrtble/issues"
   },
   "homepage": "https://github.com/volkovasystems/wrtble#readme",
   "dependencies": {
-    "asyum": "^0.0.0",
+    "asyum": "^0.3.0",
     "babel-runtime": "^6.23.0",
-    "dscrb": "^0.1.0",
+    "dscrb": "^0.2.0",
     "zelf": "^0.11.0"
   },
   "devDependencies": {
