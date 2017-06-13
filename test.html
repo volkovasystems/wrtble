@@ -1,8 +1,32 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./wrtble.deploy.js">
-		</script>
+		<title>wrtble unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./bower_components/harden/harden.deploy.js"></script>
+
+		<script type="application/javascript" src="./wrtble.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "wrtble unit test", function( assert ) {
+
+				assert.equal( wrtble( "property", { "property": "value" } ), true, "should be true" );
+
+				let test = { };
+				harden( 123, "sample", test );
+				assert.equal( wrtble( 123, test ), false, "should be false" );
+				
+			} );
+		</script>
+	</body>
 </html>
