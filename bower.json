@@ -1,6 +1,6 @@
 {
   "name": "wrtble",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Checks if property is writable.",
   "main": "wrtble.deploy.js",
   "support": "wrtble.support.js",
@@ -25,8 +25,8 @@
     "tests"
   ],
   "dependencies": {
-    "asyum": "^0.7.0",
-    "dscrb": "^0.5.0",
+    "asyum": "^0.8.0",
+    "dscrb": "^0.6.0",
     "zelf": "^0.12.0"
   }
 }
