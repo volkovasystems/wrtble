@@ -11,4 +11,4 @@ let test = { };
 harden( 123, "sample", test );
 assert.equal( wrtble( 123, test ), false, "should be equal to false" );
 
-console.log( "ok" );
+console.log( "ok", duration, "ms" );
