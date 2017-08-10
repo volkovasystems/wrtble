@@ -49,14 +49,12 @@
 
 	@include:
 		{
-			"asyum": "asyum",
 			"dscrb": "dscrb",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
-const asyum = require( "asyum" );
 const dscrb = require( "dscrb" );
 const zelf = require( "zelf" );
 
@@ -78,19 +76,7 @@ const wrtble = function wrtble( property, entity ){
 		entity = zelf( this );
 	}
 
-	let descriptor = asyum( { }, function flush( ){ } );
-
-	try{
-		descriptor = dscrb( property, entity );
-
-		return descriptor.writable( );
-
-	}catch( error ){
-		throw new Error( `cannot check if property is writable, ${ error.stack }` );
-
-	}finally{
-		descriptor.flush( );
-	}
+	return dscrb( property, entity ).writable( );
 };
 
 module.exports = wrtble;
