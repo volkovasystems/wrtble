@@ -50,12 +50,14 @@
 	@include:
 		{
 			"dscrb": "dscrb",
+			"kein": "kein",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
 const dscrb = require( "dscrb" );
+const kein = require( "kein" );
 const zelf = require( "zelf" );
 
 const wrtble = function wrtble( property, entity ){
@@ -76,7 +78,7 @@ const wrtble = function wrtble( property, entity ){
 		entity = zelf( this );
 	}
 
-	return dscrb( property, entity ).writable( );
+	return ( kein( property, entity ) && dscrb( property, entity ).writable( ) );
 };
 
 module.exports = wrtble;

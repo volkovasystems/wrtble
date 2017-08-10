@@ -1,6 +1,7 @@
 yarn add \
 babel-runtime \
 dscrb \
+kein \
 zelf \
 --save && \
 yarn add \
@@ -13,6 +14,7 @@ webpack \
 --dev && \
 bower install \
 dscrb \
+kein \
 zelf \
 --save \
 --force-latest
