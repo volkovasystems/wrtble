@@ -20,12 +20,12 @@
 		<script type="application/javascript">
 			QUnit.test( "wrtble unit test", function( assert ) {
 
-				assert.equal( wrtble( "property", { "property": "value" } ), true, "should be true" );
+				assert.equal( wrtble( "property", { "property": "value" } ), true, "should be equal to true" );
 
 				let test = { };
 				harden( 123, "sample", test );
-				assert.equal( wrtble( 123, test ), false, "should be false" );
-				
+				assert.equal( wrtble( 123, test ), false, "should be equal to false" );
+
 			} );
 		</script>
 	</body>
