@@ -1,0 +1,60 @@
+{
+	"stats": {
+		"suites": 4,
+		"tests": 3,
+		"passes": 3,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-29T02:54:59.843Z",
+		"end": "2017-08-29T02:54:59.850Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should return true",
+			"fullTitle": "wrtble `wrtble( 'property', { 'property': 'value' } )` should return true",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
+			"fullTitle": "wrtble `wrtble( 'property', { } )` should return false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
+			"fullTitle": "wrtble `non-writable property` should return false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return true",
+			"fullTitle": "wrtble `wrtble( 'property', { 'property': 'value' } )` should return true",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
+			"fullTitle": "wrtble `wrtble( 'property', { } )` should return false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
+			"fullTitle": "wrtble `non-writable property` should return false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
+}
