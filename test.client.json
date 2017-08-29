@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-29T02:55:01.452Z",
-	"end": "2017-08-29T02:55:44.773Z",
+	"start": "2017-08-29T02:59:23.272Z",
+	"end": "2017-08-29T03:00:05.366Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -31,68 +31,68 @@
 		{
 			"name": "wrtble",
 			"duration": 0,
-			"start": "2017-08-29T02:55:44.322Z",
+			"start": "2017-08-29T03:00:04.924Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "wrtble",
-			"duration": 262,
-			"start": "2017-08-29T02:55:44.323Z",
-			"end": "2017-08-29T02:55:44.585Z",
+			"duration": 268,
+			"start": "2017-08-29T03:00:04.925Z",
+			"end": "2017-08-29T03:00:05.193Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-29T02:55:44.324Z",
-					"end": "2017-08-29T02:55:44.324Z",
+					"start": "2017-08-29T03:00:04.927Z",
+					"end": "2017-08-29T03:00:04.927Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wrtble",
 					"associatedTest": "should return true"
 				},
 				{
-					"start": "2017-08-29T02:55:44.488Z",
-					"end": "2017-08-29T02:55:44.489Z",
+					"start": "2017-08-29T03:00:05.085Z",
+					"end": "2017-08-29T03:00:05.086Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wrtble",
 					"associatedTest": "should return true"
 				},
 				{
-					"start": "2017-08-29T02:55:44.490Z",
-					"end": "2017-08-29T02:55:44.491Z",
+					"start": "2017-08-29T03:00:05.087Z",
+					"end": "2017-08-29T03:00:05.087Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-08-29T03:00:05.136Z",
+					"end": "2017-08-29T03:00:05.136Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-08-29T03:00:05.136Z",
+					"end": "2017-08-29T03:00:05.136Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-08-29T03:00:05.192Z",
+					"end": "2017-08-29T03:00:05.193Z",
 					"duration": 1,
-					"title": "\"before each\" hook",
-					"associatedSuite": "wrtble",
-					"associatedTest": "should return false"
-				},
-				{
-					"start": "2017-08-29T02:55:44.543Z",
-					"end": "2017-08-29T02:55:44.543Z",
-					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wrtble",
 					"associatedTest": "should return false"
 				},
 				{
-					"start": "2017-08-29T02:55:44.543Z",
-					"end": "2017-08-29T02:55:44.543Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "wrtble",
-					"associatedTest": "should return false"
-				},
-				{
-					"start": "2017-08-29T02:55:44.585Z",
-					"end": "2017-08-29T02:55:44.585Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "wrtble",
-					"associatedTest": "should return false"
-				},
-				{
-					"start": "2017-08-29T02:55:44.585Z",
-					"end": "2017-08-29T02:55:44.585Z",
+					"start": "2017-08-29T03:00:05.193Z",
+					"end": "2017-08-29T03:00:05.193Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "wrtble"
@@ -101,15 +101,15 @@
 		},
 		{
 			"name": "`wrtble( 'property', { 'property': 'value' } )`",
-			"duration": 167,
-			"start": "2017-08-29T02:55:44.323Z",
-			"end": "2017-08-29T02:55:44.490Z",
+			"duration": 160,
+			"start": "2017-08-29T03:00:04.926Z",
+			"end": "2017-08-29T03:00:05.086Z",
 			"tests": [
 				{
 					"name": "should return true",
-					"start": "2017-08-29T02:55:44.323Z",
-					"end": "2017-08-29T02:55:44.488Z",
-					"duration": 165,
+					"start": "2017-08-29T03:00:04.926Z",
+					"end": "2017-08-29T03:00:05.085Z",
+					"duration": 159,
 					"state": "pass"
 				}
 			],
@@ -117,15 +117,15 @@
 		},
 		{
 			"name": "`wrtble( 'property', { } )`",
-			"duration": 53,
-			"start": "2017-08-29T02:55:44.490Z",
-			"end": "2017-08-29T02:55:44.543Z",
+			"duration": 49,
+			"start": "2017-08-29T03:00:05.087Z",
+			"end": "2017-08-29T03:00:05.136Z",
 			"tests": [
 				{
 					"name": "should return false",
-					"start": "2017-08-29T02:55:44.490Z",
-					"end": "2017-08-29T02:55:44.543Z",
-					"duration": 53,
+					"start": "2017-08-29T03:00:05.087Z",
+					"end": "2017-08-29T03:00:05.135Z",
+					"duration": 48,
 					"state": "pass"
 				}
 			],
@@ -133,15 +133,15 @@
 		},
 		{
 			"name": "`non-writable property`",
-			"duration": 42,
-			"start": "2017-08-29T02:55:44.543Z",
-			"end": "2017-08-29T02:55:44.585Z",
+			"duration": 57,
+			"start": "2017-08-29T03:00:05.136Z",
+			"end": "2017-08-29T03:00:05.193Z",
 			"tests": [
 				{
 					"name": "should return false",
-					"start": "2017-08-29T02:55:44.543Z",
-					"end": "2017-08-29T02:55:44.585Z",
-					"duration": 42,
+					"start": "2017-08-29T03:00:05.136Z",
+					"end": "2017-08-29T03:00:05.192Z",
+					"duration": 56,
 					"state": "pass"
 				}
 			],
