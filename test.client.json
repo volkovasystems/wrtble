@@ -1,0 +1,151 @@
+{
+	"state": {
+		"passed": 3,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-29T02:55:01.452Z",
+	"end": "2017-08-29T02:55:44.773Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": {
+			"proxyType": "direct"
+		}
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd",
+		"slow": 0
+	},
+	"suites": [
+		{
+			"name": "wrtble",
+			"duration": 0,
+			"start": "2017-08-29T02:55:44.322Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "wrtble",
+			"duration": 262,
+			"start": "2017-08-29T02:55:44.323Z",
+			"end": "2017-08-29T02:55:44.585Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-29T02:55:44.324Z",
+					"end": "2017-08-29T02:55:44.324Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-29T02:55:44.488Z",
+					"end": "2017-08-29T02:55:44.489Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-08-29T02:55:44.490Z",
+					"end": "2017-08-29T02:55:44.491Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-08-29T02:55:44.543Z",
+					"end": "2017-08-29T02:55:44.543Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-08-29T02:55:44.543Z",
+					"end": "2017-08-29T02:55:44.543Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-08-29T02:55:44.585Z",
+					"end": "2017-08-29T02:55:44.585Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-08-29T02:55:44.585Z",
+					"end": "2017-08-29T02:55:44.585Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "wrtble"
+				}
+			]
+		},
+		{
+			"name": "`wrtble( 'property', { 'property': 'value' } )`",
+			"duration": 167,
+			"start": "2017-08-29T02:55:44.323Z",
+			"end": "2017-08-29T02:55:44.490Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-08-29T02:55:44.323Z",
+					"end": "2017-08-29T02:55:44.488Z",
+					"duration": 165,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wrtble( 'property', { } )`",
+			"duration": 53,
+			"start": "2017-08-29T02:55:44.490Z",
+			"end": "2017-08-29T02:55:44.543Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-08-29T02:55:44.490Z",
+					"end": "2017-08-29T02:55:44.543Z",
+					"duration": 53,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`non-writable property`",
+			"duration": 42,
+			"start": "2017-08-29T02:55:44.543Z",
+			"end": "2017-08-29T02:55:44.585Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-08-29T02:55:44.543Z",
+					"end": "2017-08-29T02:55:44.585Z",
+					"duration": 42,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

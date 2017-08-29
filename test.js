@@ -1,5 +1,7 @@
+"use strict";
+
 /*;
-	@module-license:
+	@test-license:
 		The MIT License (MIT)
 		@mit-license
 
@@ -23,62 +25,83 @@
 		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 		SOFTWARE.
-	@end-module-license
+	@end-test-license
 
-	@module-configuration:
+	@test-configuration:
 		{
 			"package": "wrtble",
-			"path": "wrtble/wrtble.js",
-			"file": "wrtble.js",
-			"module": "wrtble",
+			"path": "wrtble/test.module.js",
+			"file": "test.module.js",
+			"module": "test",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
 				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
-			"repository": "https://github.com/volkovasystems/wrtble.git",
-			"test": "wrtble-test.js",
-			"global": true
+			"repository": "https://github.com/volkovasystems/wrtble.git"
 		}
-	@end-module-configuration
+	@end-test-configuration
 
-	@module-documentation:
-		Checks if property is writable.
-	@end-module-documentation
+	@test-documentation:
+
+	@end-test-documentation
 
 	@include:
 		{
-			"dscrb": "dscrb",
-			"kein": "kein",
-			"zelf": "zelf"
+			"assert": "should",
+			"wrtble": "wrtble",
+			"path": "path"
 		}
 	@end-include
 */
 
-const dscrb = require( "dscrb" );
-const kein = require( "kein" );
-const zelf = require( "zelf" );
+const assert = require( "should" );
 
-const wrtble = function wrtble( property, entity ){
-	/*;
-		@meta-configuration:
-			{
-				"property:required": [
-					"number"
-					"string",
-					"symbol"
-				],
-				"entity": "*"
-			}
-		@end-meta-configuration
-	*/
+//: @server:
+const wrtble = require( "./wrtble.js" );
+//: @end-server
 
-	if( arguments.length == 1 ){
-		entity = zelf( this );
-	}
 
-	return ( kein( property, entity ) && dscrb( property, entity ).writable( ) );
-};
 
-module.exports = wrtble;
+
+
+//: @server:
+describe( "wrtble", ( ) => {
+
+	describe( "`wrtble( 'property', { 'property': 'value' } )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = wrtble( "property", { "property": "value" } );
+
+			assert.equal( result, true );
+		} );
+	} );
+
+	describe( "`wrtble( 'property', { } )`", ( ) => {
+		it( "should return false", ( ) => {
+			let result = wrtble( "property", { } );
+
+			assert.equal( result, false );
+		} );
+	} );
+
+	describe( "`non-writable property`", ( ) => {
+		it( "should return false", ( ) => {
+			let data = { };
+			Object.defineProperty( data, "property", {
+				"value": 123,
+				"writable": false
+			} );
+
+			let result = wrtble( "property", data );
+
+			assert.equal( result, false );
+		} );
+	} );
+
+} );
+//: @end-server
+
+
+
+

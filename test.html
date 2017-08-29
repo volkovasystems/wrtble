@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>wrtble unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:wrtble</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./bower_components/harden/harden.deploy.js"></script>
-
-		<script type="application/javascript" src="./wrtble.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "wrtble unit test", function( assert ) {
-
-				assert.equal( wrtble( "property", { "property": "value" } ), true, "should be equal to true" );
-
-				let test = { };
-				harden( 123, "sample", test );
-				assert.equal( wrtble( 123, test ), false, "should be equal to false" );
-
+			mocha.setup( {
+				"ui": "bdd",
+				"slow": 0
 			} );
+		</script>
+
+		<script type="application/javascript" src="./test.deploy.js"></script>
+
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>

@@ -1,32 +1,32 @@
 {
-  "name": "wrtble",
-  "version": "0.8.0",
-  "description": "Checks if property is writable.",
-  "main": "wrtble.deploy.js",
-  "support": "wrtble.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "check",
-    "property",
-    "writable",
-    "wrtble"
-  ],
-  "homepage": "https://github.com/volkovasystems/wrtble",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "asyum": "^0.9.0",
-    "dscrb": "^0.7.0",
-    "zelf": "^0.14.0"
-  }
+	"name": "wrtble",
+	"version": "0.9.0",
+	"description": "Checks if property is writable.",
+	"main": "wrtble.deploy.js",
+	"support": "wrtble.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"check",
+		"property",
+		"writable",
+		"wrtble"
+	],
+	"homepage": "https://github.com/volkovasystems/wrtble",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"dscrb": "^0.7.0",
+		"kein": "^0.30.0",
+		"zelf": "^0.14.0"
+	}
 }
