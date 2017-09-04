@@ -77,6 +77,14 @@ describe( "wrtble", ( ) => {
 		} );
 	} );
 
+	describe( "`wrtble( 'length', [ 1, 2, 3 ] )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = wrtble( "length", [ 1, 2, 3 ] );
+
+			assert.equal( result, true );
+		} );
+	} );
+
 	describe( "`wrtble( 'property', { } )`", ( ) => {
 		it( "should return false", ( ) => {
 			let result = wrtble( "property", { } );
@@ -94,6 +102,14 @@ describe( "wrtble", ( ) => {
 			} );
 
 			let result = wrtble( "property", data );
+
+			assert.equal( result, false );
+		} );
+	} );
+
+	describe( "`wrtble( 'name', function yeah( ){ } )`", ( ) => {
+		it( "should return false", ( ) => {
+			let result = wrtble( "name", function yeah( ){ } );
 
 			assert.equal( result, false );
 		} );

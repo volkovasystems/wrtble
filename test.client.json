@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 3,
+		"passed": 5,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-29T02:59:23.272Z",
-	"end": "2017-08-29T03:00:05.366Z",
+	"start": "2017-09-04T06:34:30.731Z",
+	"end": "2017-09-04T06:35:05.154Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -31,68 +31,100 @@
 		{
 			"name": "wrtble",
 			"duration": 0,
-			"start": "2017-08-29T03:00:04.924Z",
+			"start": "2017-09-04T06:35:04.598Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "wrtble",
-			"duration": 268,
-			"start": "2017-08-29T03:00:04.925Z",
-			"end": "2017-08-29T03:00:05.193Z",
+			"duration": 374,
+			"start": "2017-09-04T06:35:04.599Z",
+			"end": "2017-09-04T06:35:04.973Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-29T03:00:04.927Z",
-					"end": "2017-08-29T03:00:04.927Z",
+					"start": "2017-09-04T06:35:04.601Z",
+					"end": "2017-09-04T06:35:04.601Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wrtble",
 					"associatedTest": "should return true"
 				},
 				{
-					"start": "2017-08-29T03:00:05.085Z",
-					"end": "2017-08-29T03:00:05.086Z",
+					"start": "2017-09-04T06:35:04.738Z",
+					"end": "2017-09-04T06:35:04.739Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wrtble",
 					"associatedTest": "should return true"
 				},
 				{
-					"start": "2017-08-29T03:00:05.087Z",
-					"end": "2017-08-29T03:00:05.087Z",
+					"start": "2017-09-04T06:35:04.740Z",
+					"end": "2017-09-04T06:35:04.740Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wrtble",
-					"associatedTest": "should return false"
+					"associatedTest": "should return true"
 				},
 				{
-					"start": "2017-08-29T03:00:05.136Z",
-					"end": "2017-08-29T03:00:05.136Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "wrtble",
-					"associatedTest": "should return false"
-				},
-				{
-					"start": "2017-08-29T03:00:05.136Z",
-					"end": "2017-08-29T03:00:05.136Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "wrtble",
-					"associatedTest": "should return false"
-				},
-				{
-					"start": "2017-08-29T03:00:05.192Z",
-					"end": "2017-08-29T03:00:05.193Z",
+					"start": "2017-09-04T06:35:04.793Z",
+					"end": "2017-09-04T06:35:04.794Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wrtble",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-09-04T06:35:04.794Z",
+					"end": "2017-09-04T06:35:04.795Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
 					"associatedTest": "should return false"
 				},
 				{
-					"start": "2017-08-29T03:00:05.193Z",
-					"end": "2017-08-29T03:00:05.193Z",
+					"start": "2017-09-04T06:35:04.847Z",
+					"end": "2017-09-04T06:35:04.847Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-09-04T06:35:04.848Z",
+					"end": "2017-09-04T06:35:04.848Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-09-04T06:35:04.897Z",
+					"end": "2017-09-04T06:35:04.897Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-09-04T06:35:04.897Z",
+					"end": "2017-09-04T06:35:04.897Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-09-04T06:35:04.973Z",
+					"end": "2017-09-04T06:35:04.973Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wrtble",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-09-04T06:35:04.973Z",
+					"end": "2017-09-04T06:35:04.973Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "wrtble"
@@ -101,15 +133,31 @@
 		},
 		{
 			"name": "`wrtble( 'property', { 'property': 'value' } )`",
-			"duration": 160,
-			"start": "2017-08-29T03:00:04.926Z",
-			"end": "2017-08-29T03:00:05.086Z",
+			"duration": 140,
+			"start": "2017-09-04T06:35:04.600Z",
+			"end": "2017-09-04T06:35:04.740Z",
 			"tests": [
 				{
 					"name": "should return true",
-					"start": "2017-08-29T03:00:04.926Z",
-					"end": "2017-08-29T03:00:05.085Z",
-					"duration": 159,
+					"start": "2017-09-04T06:35:04.600Z",
+					"end": "2017-09-04T06:35:04.738Z",
+					"duration": 138,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wrtble( 'length', [ 1, 2, 3 ] )`",
+			"duration": 54,
+			"start": "2017-09-04T06:35:04.740Z",
+			"end": "2017-09-04T06:35:04.794Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-09-04T06:35:04.740Z",
+					"end": "2017-09-04T06:35:04.793Z",
+					"duration": 53,
 					"state": "pass"
 				}
 			],
@@ -117,15 +165,15 @@
 		},
 		{
 			"name": "`wrtble( 'property', { } )`",
-			"duration": 49,
-			"start": "2017-08-29T03:00:05.087Z",
-			"end": "2017-08-29T03:00:05.136Z",
+			"duration": 54,
+			"start": "2017-09-04T06:35:04.794Z",
+			"end": "2017-09-04T06:35:04.848Z",
 			"tests": [
 				{
 					"name": "should return false",
-					"start": "2017-08-29T03:00:05.087Z",
-					"end": "2017-08-29T03:00:05.135Z",
-					"duration": 48,
+					"start": "2017-09-04T06:35:04.794Z",
+					"end": "2017-09-04T06:35:04.847Z",
+					"duration": 53,
 					"state": "pass"
 				}
 			],
@@ -133,15 +181,31 @@
 		},
 		{
 			"name": "`non-writable property`",
-			"duration": 57,
-			"start": "2017-08-29T03:00:05.136Z",
-			"end": "2017-08-29T03:00:05.193Z",
+			"duration": 49,
+			"start": "2017-09-04T06:35:04.848Z",
+			"end": "2017-09-04T06:35:04.897Z",
 			"tests": [
 				{
 					"name": "should return false",
-					"start": "2017-08-29T03:00:05.136Z",
-					"end": "2017-08-29T03:00:05.192Z",
-					"duration": 56,
+					"start": "2017-09-04T06:35:04.848Z",
+					"end": "2017-09-04T06:35:04.896Z",
+					"duration": 48,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wrtble( 'name', function yeah( ){ } )`",
+			"duration": 76,
+			"start": "2017-09-04T06:35:04.897Z",
+			"end": "2017-09-04T06:35:04.973Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-09-04T06:35:04.897Z",
+					"end": "2017-09-04T06:35:04.973Z",
+					"duration": 76,
 					"state": "pass"
 				}
 			],

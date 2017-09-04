@@ -1,12 +1,12 @@
 {
 	"stats": {
-		"suites": 4,
-		"tests": 3,
-		"passes": 3,
+		"suites": 6,
+		"tests": 5,
+		"passes": 5,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-29T02:59:22.071Z",
-		"end": "2017-08-29T02:59:22.077Z",
+		"start": "2017-09-04T06:34:28.845Z",
+		"end": "2017-09-04T06:34:28.851Z",
 		"duration": 6
 	},
 	"tests": [
@@ -18,15 +18,29 @@
 			"err": {}
 		},
 		{
-			"title": "should return false",
-			"fullTitle": "wrtble `wrtble( 'property', { } )` should return false",
+			"title": "should return true",
+			"fullTitle": "wrtble `wrtble( 'length', [ 1, 2, 3 ] )` should return true",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should return false",
+			"fullTitle": "wrtble `wrtble( 'property', { } )` should return false",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
 			"fullTitle": "wrtble `non-writable property` should return false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
+			"fullTitle": "wrtble `wrtble( 'name', function yeah( ){ } )` should return false",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
@@ -43,15 +57,29 @@
 			"err": {}
 		},
 		{
-			"title": "should return false",
-			"fullTitle": "wrtble `wrtble( 'property', { } )` should return false",
+			"title": "should return true",
+			"fullTitle": "wrtble `wrtble( 'length', [ 1, 2, 3 ] )` should return true",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should return false",
+			"fullTitle": "wrtble `wrtble( 'property', { } )` should return false",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
 			"fullTitle": "wrtble `non-writable property` should return false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return false",
+			"fullTitle": "wrtble `wrtble( 'name', function yeah( ){ } )` should return false",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}

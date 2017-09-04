@@ -81,37 +81,9 @@ describe( "wrtble", ( ) => {
 		} );
 	} );
 
-	describe( "`wrtble( 'property', { } )`", ( ) => {
-		it( "should return false", ( ) => {
-			let result = wrtble( "property", { } );
-
-			assert.equal( result, false );
-		} );
-	} );
-
-	describe( "`non-writable property`", ( ) => {
-		it( "should return false", ( ) => {
-			let data = { };
-			Object.defineProperty( data, "property", {
-				"value": 123,
-				"writable": false
-			} );
-
-			let result = wrtble( "property", data );
-
-			assert.equal( result, false );
-		} );
-	} );
-
-} );
-//: @end-server
-
-//: @client:
-describe( "wrtble", ( ) => {
-
-	describe( "`wrtble( 'property', { 'property': 'value' } )`", ( ) => {
+	describe( "`wrtble( 'length', [ 1, 2, 3 ] )`", ( ) => {
 		it( "should return true", ( ) => {
-			let result = wrtble( "property", { "property": "value" } );
+			let result = wrtble( "length", [ 1, 2, 3 ] );
 
 			assert.equal( result, true );
 		} );
@@ -139,6 +111,66 @@ describe( "wrtble", ( ) => {
 		} );
 	} );
 
+	describe( "`wrtble( 'name', function yeah( ){ } )`", ( ) => {
+		it( "should return false", ( ) => {
+			let result = wrtble( "name", function yeah( ){ } );
+
+			assert.equal( result, false );
+		} );
+	} );
+
+} );
+//: @end-server
+
+//: @client:
+describe( "wrtble", ( ) => {
+
+	describe( "`wrtble( 'property', { 'property': 'value' } )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = wrtble( "property", { "property": "value" } );
+
+			assert.equal( result, true );
+		} );
+	} );
+
+	describe( "`wrtble( 'length', [ 1, 2, 3 ] )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = wrtble( "length", [ 1, 2, 3 ] );
+
+			assert.equal( result, true );
+		} );
+	} );
+
+	describe( "`wrtble( 'property', { } )`", ( ) => {
+		it( "should return false", ( ) => {
+			let result = wrtble( "property", { } );
+
+			assert.equal( result, false );
+		} );
+	} );
+
+	describe( "`non-writable property`", ( ) => {
+		it( "should return false", ( ) => {
+			let data = { };
+			Object.defineProperty( data, "property", {
+				"value": 123,
+				"writable": false
+			} );
+
+			let result = wrtble( "property", data );
+
+			assert.equal( result, false );
+		} );
+	} );
+
+	describe( "`wrtble( 'name', function yeah( ){ } )`", ( ) => {
+		it( "should return false", ( ) => {
+			let result = wrtble( "name", function yeah( ){ } );
+
+			assert.equal( result, false );
+		} );
+	} );
+
 } );
 //: @end-client
 
@@ -154,6 +186,21 @@ describe( "wrtble", ( ) => {
 
 				function( ){
 					return wrtble( "property", { "property": "value" } );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+		} );
+	} );
+
+	describe( "`wrtble( 'length', [ 1, 2, 3 ] )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return wrtble( "length", [ 1, 2, 3 ] );
 				}
 
 			).value;
@@ -190,6 +237,21 @@ describe( "wrtble", ( ) => {
 					} );
 
 					return wrtble( "property", data );
+				}
+
+			).value;
+
+			assert.equal( result, false );
+		} );
+	} );
+
+	describe( "`wrtble( 'name', function yeah( ){ } )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return wrtble( "name", function yeah( ){ } );
 				}
 
 			).value;
